@@ -1,1 +1,2 @@
 This is a landing page for emigr8 visa chatbot
+Tech Visa Pathway to Relocation Settlement | Tech Visas made easy, tailored to your country of choice. Get Started Welcome to eMigr8 eMigr8 is a tech-driven platform designed to simplify the visa process and facilitate international relocation for both individuals and tech businesses. Vision Its overarching vision is to help talents become globally attractive
