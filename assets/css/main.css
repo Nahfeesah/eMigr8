@@ -480,13 +480,26 @@ section,
   background-image: url("../img/low-angle-view-business-buildings-with-plane-flying.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 .hero .hero-content{
   display: flex;
   align-items: center;
-  height: 90vh;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 100px;
+  color: #ffffff;
 }
 
 .hero .container {
@@ -497,7 +510,8 @@ section,
 .hero h1 {
   font-size: 128px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1;
 }
 
 .hero h2 .accent {
@@ -505,10 +519,10 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  olor: color-mix(in srgb, var(--default-color), transparent 40%);
   font-weight: 400;
   margin: 10px 0px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .hero .btn-get-started {
@@ -516,14 +530,13 @@ section,
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 15px 30px;
   border-radius: 50px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
-  margin: 36px 0px;
 }
 
 .hero .btn-get-started:hover {
@@ -555,8 +568,13 @@ section,
 }
 .text-center .how-it-works{
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 800;
+
 }
+.how-it-works-div{
+  margin-top: 50px;
+}
+
 
 
 @media (max-width: 640px) {
@@ -622,39 +640,20 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content .who-we-are {
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
 
-.about .content h3 {
+.about  h3 {
   font-size: 2rem;
   font-weight: 700;
 }
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .lead{
+  font-family: var(--default-font);
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
-}
-
-.about .content ul i {
-  font-size: 1.25rem;
-  margin-right: 4px;
-  color: var(--accent-color);
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
 .logo img {
   max-height: 46px;
   margin-right: 8px;
 }
+
 .quick-link :hover{
  text-decoration: underline;
  color: green;
