@@ -207,7 +207,7 @@ h6 {
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -246,27 +246,6 @@ h6 {
     transform: rotate(180deg);
   }
 
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
-  }
-
   .mobile-nav-active {
     overflow: hidden;
   }
@@ -292,6 +271,7 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -482,11 +462,29 @@ section,
   position: relative;
   padding: 0%;
   margin: 0;
-  background-image: url("../img/low-angle-view-business-buildings-with-plane-flying.jpg");
+  background-image: url("../img/freepik__upload__581.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+.oving-image {
+  osition: absolute;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 .overlay {
   position: absolute;
@@ -524,7 +522,7 @@ section,
 }
 
 .hero p {
-  olor: color-mix(in srgb, var(--default-color), transparent 40%);
+ 
   font-weight: 400;
   margin: 10px 0px;
   font-size: 16px;
@@ -570,6 +568,13 @@ section,
 
 .hero .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+@media (max-width: 576px) {
+  /* Styles for phones */
+  .hero h1 {
+    font-size: 80px;
+  }
+  
 }
 .text-center .how-it-works{
   font-size: 60px;
