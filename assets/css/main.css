@@ -61,11 +61,6 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -279,12 +274,18 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: rgba(207, 207, 207, 0.363);
   font-size: 15px;
   padding: 40px 0;
   position: relative;
 }
-
+.footer .quick-links a{
+   color: var(--default-color);
+}
+.footer .quick-links a:hover{
+  color: var(--accent-color);
+  font-size: 16px;
+}
 .footer .copyright p {
   margin-bottom: 0;
 }
@@ -464,7 +465,7 @@ section,
   border-bottom-right-radius: 30px;
 }
 .oving-image {
-  osition: absolute;
+  position: absolute;
   animation: move 5s linear infinite;
 }
 
@@ -539,6 +540,7 @@ section,
 
 .hero .btn-get-started:hover {
   background-color: white;
+  color: var(--accent-color);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
@@ -558,7 +560,7 @@ section,
 }
 
 .hero .btn-watch-video:hover {
-  color: var(--accent-color);
+  font-size:20px;
 }
 
 .hero .btn-watch-video:hover i {
@@ -652,8 +654,8 @@ section,
 }
 
 .about .content h3 {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 40px; /*48*/
+  font-weight: 600; /*600*/
   line-height: 1;
 }
 
@@ -674,7 +676,7 @@ section,
 
 .about .content p{
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px; /*18*/
   line-height: 1.75rem;
   
  
